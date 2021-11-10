@@ -15,7 +15,7 @@ for(let i=1 ; i <= 100; i++){
     }else if(i % 5 ==0){
         numero = "Bazz";
         box.classList.add("giallo");
-    }else if(i % 5 ==0){
+    }else if(i % 15 ==0){
         numero = "FizzBazz";
         box.classList.add("rosa");
     }else{
