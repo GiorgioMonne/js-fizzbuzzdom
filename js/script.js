@@ -2,9 +2,10 @@
 
 
 let numero;
-let box = document.createElement("div");
+let box;
 
 for(let i=1 ; i <= 100; i++){
+    box = document.createElement("div");
     document.querySelector(".lista").append(box);
     box.className = "box";
 
@@ -22,7 +23,6 @@ for(let i=1 ; i <= 100; i++){
     }
     box.innerHTML = numero;
 }
-
 
 
 // **versione che non flexa
