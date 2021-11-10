@@ -1,4 +1,3 @@
-// ***versione giusta
 
 
 let numero;
@@ -9,17 +8,17 @@ for(let i=1 ; i <= 100; i++){
     document.querySelector(".lista").append(box);
     box.className = "box";
 
-    if(i % 3 ==0){
+    if(i % 15 ==0){
+        numero = "FizzBazz";
+        box.classList.add("rosa");
+        console.log(numero);
+    }else if(i % 3 ==0){
         numero = "Fizz";
         box.classList.add("verde");
         console.log(numero);
     }else if(i % 5 ==0){
         numero = "Bazz";
         box.classList.add("giallo");
-        console.log(numero);
-    }else if(i % 15 ==0){
-        numero = "FizzBazz";
-        box.classList.add("rosa");
         console.log(numero);
     }else{
         numero = i;
@@ -28,6 +27,41 @@ for(let i=1 ; i <= 100; i++){
     box.innerHTML = numero;
     console.log(box);
 }
+
+
+
+
+
+// ***versione con ordine sbagliata
+
+
+// let numero;
+// let box;
+
+// for(let i=1 ; i <= 100; i++){
+//     box = document.createElement("div");
+//     document.querySelector(".lista").append(box);
+//     box.className = "box";
+
+//     if(i % 3 ==0){
+//         numero = "Fizz";
+//         box.classList.add("verde");
+//         console.log(numero);
+//     }else if(i % 5 ==0){
+//         numero = "Bazz";
+//         box.classList.add("giallo");
+//         console.log(numero);
+//     }else if(i % 15 ==0){
+//         numero = "FizzBazz";
+//         box.classList.add("rosa");
+//         console.log(numero);
+//     }else{
+//         numero = i;
+//         console.log(numero);
+//     }
+//     box.innerHTML = numero;
+//     console.log(box);
+// }
 
 
 
