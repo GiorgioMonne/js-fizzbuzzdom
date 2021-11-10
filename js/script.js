@@ -12,16 +12,21 @@ for(let i=1 ; i <= 100; i++){
     if(i % 3 ==0){
         numero = "Fizz";
         box.classList.add("verde");
+        console.log(numero);
     }else if(i % 5 ==0){
         numero = "Bazz";
         box.classList.add("giallo");
+        console.log(numero);
     }else if(i % 15 ==0){
         numero = "FizzBazz";
         box.classList.add("rosa");
+        console.log(numero);
     }else{
         numero = i;
+        console.log(numero);
     }
     box.innerHTML = numero;
+    console.log(box);
 }
 
 
