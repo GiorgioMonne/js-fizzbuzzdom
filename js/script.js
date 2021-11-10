@@ -25,6 +25,10 @@ for(let i=1 ; i <= 100; i++){
 }
 
 
+
+// ***WARNING***
+// ricordarsi di mettere la creazione del box dentro il ciclo sennò verrà creato solo una volta
+
 // **versione che non flexa
 
 // let lista = document.querySelector('.list');
